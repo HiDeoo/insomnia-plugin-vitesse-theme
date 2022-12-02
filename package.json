@@ -1,6 +1,6 @@
 {
   "name": "insomnia-plugin-vitesse-theme",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "description": "A set of Insomnia color themes based on the Vitesse Theme for VS Code.",
   "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
