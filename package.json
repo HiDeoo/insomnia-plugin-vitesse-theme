@@ -27,9 +27,6 @@
     "tsx": "3.12.1",
     "typescript": "4.9.3"
   },
-  "engines": {
-    "node": ">=18"
-  },
   "files": [
     "assets",
     "dist"
