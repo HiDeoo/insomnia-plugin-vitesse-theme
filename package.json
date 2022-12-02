@@ -1,0 +1,73 @@
+{
+  "name": "insomnia-plugin-vitesse-theme",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "A set of Insomnia color themes based on the Vitesse Theme for VS Code.",
+  "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
+  "main": "dist",
+  "scripts": {
+    "build": "tsx src",
+    "lint": "prettier -c . && eslint . --cache --max-warnings=0 && tsc --noEmit",
+    "prepare": "husky install",
+    "prepublishOnly": "pnpm build"
+  },
+  "devDependencies": {
+    "@hideoo/eslint-config": "0.13.0",
+    "@hideoo/prettier-config": "0.1.1",
+    "@hideoo/tsconfig": "0.1.0",
+    "@types/degit": "2.8.3",
+    "@types/node": "18.11.10",
+    "degit": "2.8.4",
+    "eslint": "8.28.0",
+    "fast-glob": "3.2.12",
+    "husky": "8.0.2",
+    "lint-staged": "13.0.4",
+    "ora": "6.1.2",
+    "prettier": "2.8.0",
+    "tsx": "3.12.1",
+    "typescript": "4.9.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "assets",
+    "dist"
+  ],
+  "packageManager": "pnpm@7.17.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "keywords": [
+    "insomnia",
+    "insomnia-plugin",
+    "theme",
+    "vitesse"
+  ],
+  "homepage": "https://github.com/HiDeoo/insomnia-plugin-vitesse-theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HiDeoo/insomnia-plugin-vitesse-theme.git"
+  },
+  "bugs": "https://github.com/HiDeoo/insomnia-plugin-vitesse-theme/issues",
+  "prettier": "@hideoo/prettier-config",
+  "lint-staged": {
+    "**/*": "prettier -w -u --cache",
+    "**/*.{js,jsx,ts,tsx,cjs,mjs}": "eslint --cache --max-warnings=0"
+  },
+  "insomnia": {
+    "name": "vitesse-theme",
+    "displayName": "Vitesse Themes",
+    "description": "A set of color themes based on the Vitesse Theme for VS Code.",
+    "images": {
+      "icon": "./assets/icon.svg",
+      "cover": "./assets/cover.png"
+    },
+    "publisher": {
+      "name": "HiDeoo",
+      "icon": "https://www.gravatar.com/avatar/92c4c52be21c64d1f2a34269d2eb26e0?s=128"
+    },
+    "unlisted": false
+  }
+}
